@@ -1,0 +1,90 @@
+(function() {
+  var Sweet = Backbone.Model.extend({
+    defaults: {
+      'who': '',
+      'what': 'img-anno',
+      'where': '',
+      'how': {}
+    },
+    initialize: function() {
+    }
+  });
+
+
+  var Sweets = Backbone.Collection.extend({
+    model: Sweet,
+    getAll: function(options) {
+      // error checking
+      if(!options.what) {
+        throw Error('"what" option must be passed to get sweets of a URI');
+        return false;
+      }
+      // setting up params
+      var where = options.where || null,
+          what = options.what;
+      var who = options.who || null;
+
+      // url = swtr.swtstoreURL() + swtr.endpoints.get + '?where=' +
+      //   encodeURIComponent(where);// '&access_token=' + swtr.access_token;
+      var url = "http://teststore.swtr.us/api/sweets/q?what=" + what;
+
+      if(who) {
+        url += '&who=' + who;
+      }
+      // get them!
+      this.sync('read', this, {
+        url: url,
+        success: function() {
+          if(typeof options.success === 'function') {
+            options.success.apply(this, arguments);
+          }
+        },
+        error: function() {
+          if(typeof options.error === 'function') {
+            options.error.apply(this, arguments);
+          }
+        }
+      });
+    }
+  });
+
+
+  var StoryView = Backbone.View.extend({
+    el: "#chapter2",
+    template: _.template($("#story-image-template").html()),
+    events: {
+      "click img": 'onImgClick',
+      "click .sweetTag": 'onWordClick'
+    },
+    initialize: function(options) {
+      this.listenTo(this.collection, "add", this.render);
+      var self = this;
+      this.collection.getAll({'what':'img-anno', who:'zoso',
+                              success: function(data) {
+                                self.collection.add(data);
+                                }});
+    },
+    render: function(model) {
+      $(this.el).append(this.template(model.toJSON()));
+    },
+    onImgClick: function(e) {
+      var el = this.collection.find(function(item) {
+        return item.id == e.currentTarget.id;
+      });
+      var infoEl = $(".hidden[for="+e.currentTarget.id+"]");
+      infoEl.addClass('show');
+      infoEl.removeClass('hidden');
+
+    },
+    onWordClick: function(e) {
+      // Get images related to the tag and display them in a carousel
+      var tag = $(e.currentTarget).text();
+
+    },
+    onImgMouseIn: function(e) {
+      $(e.currentTarget).append(this.infoTemplate());
+    }
+  });
+
+  new StoryView({collection: new Sweets()});
+})();
