@@ -53,8 +53,8 @@ font-size: 38px;
 #intro{
 background-image: url('../img/virupaksha-temple.JPG');
 background-size:cover;
-background-position-y:-28px;
-background-position-x:400px;
+
+background-position:400px -28px  !important;
 background-attachment:fixed;
 }
 
@@ -62,7 +62,7 @@ background-attachment:fixed;
 height:200vh;
 background-image:url('../img/hampi-map-vintage.jpg');
 background-size:cover;
-background-position-x:-150px;
+background-position:-30px 0px;
 background-attachment:fixed;
 }
 
@@ -74,7 +74,7 @@ background:transparent;
 #chapter2{
 background-image: url('../img/hazara-rama.jpg');
 background-size:cover;
-background-position-x:80px;
+background-position:80px 0px;
 background-attachment:fixed;
 }
 
@@ -82,19 +82,22 @@ background-attachment:fixed;
 background-image: url('../img/chamundi-mysore.jpg');
 background-size:cover;
 background-attachment:fixed;
-
+background-position:170px 50px !important;
 
 }
 
 #chapter4{
 background-image: url('../img/devaragudda.JPG');
 background-size:cover;
-background-position-x:215px;
-background-position-y:-170px;
+background-position-x:215px -170px !important;
+
 background-attachment:fixed;
 }
 
 .wrap{
 background:#000;
+text-align: justify;
+margin-left:10px;
 }
+
 
