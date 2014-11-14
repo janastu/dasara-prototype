@@ -58,6 +58,14 @@ background-position-x:400px;
 background-attachment:fixed;
 }
 
+.mapRow {
+height:200vh;
+background-image:url('../img/hampi-map-vintage.jpg');
+background-size:cover;
+background-position-x:-150px;
+background-attachment:fixed;
+}
+
 #chapter1  .wrap{
 text-align:justify;
 background:transparent;
@@ -71,7 +79,7 @@ background-attachment:fixed;
 }
 
 #chapter3{
-background-image: url('../img/chamundi-mysore.JPG');
+background-image: url('../img/chamundi-mysore.jpg');
 background-size:cover;
 background-attachment:fixed;
 
