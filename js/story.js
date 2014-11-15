@@ -72,7 +72,7 @@
     render: function(model) {
       console.log(this.tag);
       if(model.hasTag(this.tag) >= 0) {
-        $('#' + model.get('id')).append(this.template(model.toJSON()));
+        this.$('#' + model.get('id')).append(this.template(model.toJSON()));
       }
     },
     onImgClicked: function(e) {
