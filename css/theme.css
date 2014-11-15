@@ -30,10 +30,10 @@ body {
     background-color: #333;
 }
 body {
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  font-family:open-sans;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    font-family: 'Varela Round', sans-serif;
 }
 
 .container-fluid {
@@ -48,7 +48,8 @@ body {
 }
 
 .jumbotron p {
-font-size: 36px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
 }
 
 #intro{
@@ -68,16 +69,16 @@ font-size: 36px;
 }
 
 #chapter1  .wrap{
-text-align:justify;
-background:transparent;
+    text-align:justify;
+    background:transparent;
 
 }
 
 #chapter2{
-background-image: url('../img/hazara-rama.jpg');
-background-size:cover;
-background-position:25vw -5vw;
-background-attachment:fixed;
+    background-image: url('../img/hazara-rama.jpg');
+    background-size:cover;
+    background-position:25vw -5vw;
+    background-attachment:fixed;
 }
 
 #chapter3{
@@ -89,17 +90,17 @@ background-attachment:fixed;
 }
 
 #chapter4{
-background-image: url('../img/devaragudda.JPG');
-background-size:cover;
-background-position:215px -170px !important;
-background-attachment:fixed;
+    background-image: url('../img/devaragudda.JPG');
+    background-size:cover;
+    background-position:215px -170px !important;
+    background-attachment:fixed;
 }
 
 .wrap{
-background:#000;
-text-align: justify;
-margin-left:25px;
-font-size:20px;
+    background:#000;
+    text-align: justify;
+    margin-left:25px;
+    font-size:20px;
 }
 
 .story-image {
