@@ -148,3 +148,7 @@ div.row:hover .snipit {
     color: #000;
     text-shadow: none;
 }
+
+body .modal-open {
+    margin-right: 0px;
+}
