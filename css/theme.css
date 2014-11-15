@@ -153,3 +153,7 @@ div.row:hover .snipit {
 body .modal-open {
     margin-right: 0px;
 }
+
+.footer {
+  font-size:15px;
+}
