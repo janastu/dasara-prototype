@@ -107,7 +107,6 @@ body {
     height: auto;
     width: 100%;
     border: 3px solid #ccc;
-    cursor: pointer;
 }
 #lightbox .modal-content {
     display: inline-block;
@@ -154,7 +153,9 @@ div.row:hover .snipit {
 body .modal-open {
     margin-right: 0px;
 }
-
+.tradition{
+  padding-right:30px;
+}
 .footer {
   font-size:15px;
 }
