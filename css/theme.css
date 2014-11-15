@@ -121,14 +121,14 @@ body {
     border-radius: 5px;
     border: 2px solid rgb(255, 255, 255);
     position: absolute;
-    top: 22px;
-    right: -55px;
+    top: 0px;
+    left: 0px;
 
     z-index:1032;
 }
 
 div.row div {
-    height: auto;
+    height: 120px;
     margin-bottom:-100px;
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.5);
