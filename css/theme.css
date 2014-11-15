@@ -33,6 +33,7 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  font-family:open-sans;
 }
 
 .container-fluid {
@@ -47,7 +48,7 @@ margin-top:20px;
 }
 
 .jumbotron p {
-font-size: 38px;
+font-size: 36px;
 }
 
 #intro{
@@ -69,6 +70,7 @@ background-attachment:fixed;
 #chapter1  .wrap{
 text-align:justify;
 background:transparent;
+
 }
 
 #chapter2{
@@ -89,7 +91,7 @@ background-position:170px 50px !important;
 #chapter4{
 background-image: url('../img/devaragudda.JPG');
 background-size:cover;
-background-position-x:215px -170px !important;
+background-position:215px -170px !important;
 
 background-attachment:fixed;
 }
@@ -98,6 +100,7 @@ background-attachment:fixed;
 background:#000;
 text-align: justify;
 margin-left:10px;
+font-size:20px;
 }
 
 
