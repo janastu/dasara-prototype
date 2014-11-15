@@ -129,20 +129,22 @@ body {
 
 div.row div {
     height: auto;
-    padding: 0;
-    display: none;
-    bottom: 0px;
+    margin-bottom:-100px;
+    opacity: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    border:1px solid red;
+    border:1px solid #ccc;
+    position:relative;
     top: -124px;
     transition-duration: 0.4s;
 
 }
 
 div.row:hover .snipit {
-    display: block;
+    opacity: 1;
 }
-
+.modal-backdrop.in {
+  opacity:0;
+}
 #modal-content, #modal-content a{
     color: #000;
     text-shadow: none;

@@ -71,7 +71,7 @@
     },
     render: function(model) {
       console.log(this.tag);
-      if(model.hasTag(this.tag) > 0) {
+      if(model.hasTag(this.tag) >= 0) {
         $('#' + model.get('id')).append(this.template(model.toJSON()));
       }
     },
@@ -96,16 +96,21 @@
   });
   /* Populate views based on the requirement for the chapter */
   new StoryView({collection: new Sweets(),
+                 el: "#chapter2",
+                 "who":"scribe",
+                 "what":"img-anno",
+                 "tag": "hampi"});
+  new StoryView({collection: new Sweets(),
                  el: "#chapter3",
-                 "who":"bhanu",
+                 "who":"scribe",
                  "what":"img-anno",
                  "tag": "mysore"});
 
   new StoryView({collection: new Sweets(),
                  el: "#chapter4",
-                 "who":"bhanu",
+                 "who":"scribe",
                  "what":"img-anno",
-                 "tag": "village"});
+                 "tag": "dharmaragudda"});
 
   var $lightbox = $('#lightbox');
   $lightbox.on('shown.bs.modal', function (e) {
