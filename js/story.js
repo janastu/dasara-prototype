@@ -9,6 +9,7 @@
     initialize: function() {
     },
     hasTag: function(tag) {
+      console.log(this.get('how')['tags'].indexOf(tag));
       return this.get('how')['tags'].indexOf(tag);
     }
   });
@@ -70,7 +71,8 @@
                               }});
     },
     render: function(model) {
-      if(model.hasTag(this.tag)) {
+      console.log(this.tag);
+      if(model.hasTag(this.tag) > 0) {
         $('#' + model.get('id')).append(this.template(model.toJSON()));
       }
     },
@@ -99,6 +101,12 @@
                  "who":"bhanu",
                  "what":"img-anno",
                  "tag": "mysore"});
+
+  new StoryView({collection: new Sweets(),
+                 el: "#chapter4",
+                 "who":"bhanu",
+                 "what":"img-anno",
+                 "tag": "village"});
 
   var $lightbox = $('#lightbox');
   $lightbox.on('shown.bs.modal', function (e) {
