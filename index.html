@@ -458,7 +458,11 @@
     <!-- </a> -->
     <!-- <div class="hidden col-md-3" for=<%= id %>> -->
     <div class="snipit col-md-12 pull-left">
-      <p><span><%= who %>: <%= how.comment %> </span></p>
+      <% if(how.comment) { %>
+      <p><span><b><%= who %></b> says <%= how.comment %> </span></p>
+      <% } else { %>
+      <p><span>No comments!!</span></p>
+      <% } %>
     </div>
     <!-- </div> -->
   </div>
@@ -466,6 +470,8 @@
 <script type="text/template" id="swt-template">
   <p><span><%= who %> has contributed a <%= what %> for <a href=<%= where %>><%= where %></a>.</span></p>
   <p>Tags: <b> <%= how.tags %> </b> </p>
+  <a href="http://restory.swtr.us/#/play">Annotate!</a>
+  <a class="pull-right" href="http://restory.swtr.us/#/linked-data">Explore</a>
 </script>
 <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog">
