@@ -6,17 +6,17 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+    color: #fff;
 }
 
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
 .btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
+    color: #333;
+    text-shadow: none; /* Prevent inheritence from `body` */
+    background-color: #fff;
+    border: 1px solid #fff;
 }
 
 
@@ -26,8 +26,8 @@ a:hover {
 
 html,
 body {
-  height: 100%;
-  background-color: #333;
+    height: 100%;
+    background-color: #333;
 }
 body {
   color: #fff;
@@ -37,10 +37,10 @@ body {
 }
 
 .container-fluid {
-padding-right:0px;
-padding-left:0px;
-padding-top:10px;
-margin-top:20px;
+    padding-right:0px;
+    padding-left:0px;
+    padding-top:10px;
+    margin-top:20px;
 }
 
 .jumbotron{
@@ -52,19 +52,19 @@ font-size: 36px;
 }
 
 #intro{
-background-image: url('../img/virupaksha-temple.JPG');
-background-size:cover;
+    background-image: url('../img/virupaksha-temple.JPG');
+    background-size:cover;
 
-background-position:400px -28px  !important;
-background-attachment:fixed;
+    background-position:400px -28px  !important;
+    background-attachment:fixed;
 }
 
 .mapRow {
-height:200vh;
-background-image:url('../img/hampi-map-vintage.jpg');
-background-size:cover;
-background-position:-30px 0px;
-background-attachment:fixed;
+    height:200vh;
+    background-image:url('../img/hampi-map-vintage.jpg');
+    background-size:cover;
+    background-position:-30px 0px;
+    background-attachment:fixed;
 }
 
 #chapter1  .wrap{
@@ -81,10 +81,10 @@ background-attachment:fixed;
 }
 
 #chapter3{
-background-image: url('../img/chamundi-mysore.jpg');
-background-size:cover;
-background-attachment:fixed;
-background-position:170px 50px !important;
+    background-image: url('../img/chamundi-mysore.jpg');
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:170px 50px !important;
 
 }
 
@@ -92,7 +92,6 @@ background-position:170px 50px !important;
 background-image: url('../img/devaragudda.JPG');
 background-size:cover;
 background-position:215px -170px !important;
-
 background-attachment:fixed;
 }
 
@@ -127,4 +126,23 @@ font-size:20px;
     z-index:1032;
 }
 
+div.row div {
+    height: auto;
+    padding: 0;
+    display: none;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border:1px solid red;
+    top: -124px;
+    transition-duration: 0.4s;
 
+}
+
+div.row:hover .snipit {
+    display: block;
+}
+
+#modal-content, #modal-content a{
+    color: #000;
+    text-shadow: none;
+}
