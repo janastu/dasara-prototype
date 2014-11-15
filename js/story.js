@@ -9,7 +9,6 @@
     initialize: function() {
     },
     hasTag: function(tag) {
-      console.log(this.get('how')['tags'].indexOf(tag));
       return this.get('how')['tags'].indexOf(tag);
     }
   });
