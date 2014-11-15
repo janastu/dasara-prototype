@@ -99,13 +99,14 @@ background-attachment:fixed;
 .wrap{
 background:#000;
 text-align: justify;
-margin-left:10px;
+margin-left:25px;
 font-size:20px;
 }
 
 .story-image {
-    height: 60vh;
-    width: 30vw;
+    height: auto;
+    width: 100%;
+    border: 10px solid #ccc;
 }
 #lightbox .modal-content {
     display: inline-block;
