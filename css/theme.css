@@ -76,7 +76,7 @@ background:transparent;
 #chapter2{
 background-image: url('../img/hazara-rama.jpg');
 background-size:cover;
-background-position:80px 0px;
+background-position:25vw -5vw;
 background-attachment:fixed;
 }
 
@@ -106,7 +106,7 @@ font-size:20px;
 .story-image {
     height: auto;
     width: 100%;
-    border: 10px solid #ccc;
+    border: 3px solid #ccc;
 }
 #lightbox .modal-content {
     display: inline-block;
