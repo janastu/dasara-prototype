@@ -115,7 +115,7 @@ body {
   height:28px;
 }
 
-}
+
 .story-image {
     height: auto;
     width: 100%;
@@ -178,6 +178,15 @@ div.row:hover .info-icon {
 div.row:hover .snipit {
     opacity: 1;
 }
+.fullscreen-icon{
+  position:relative;
+  top:23px;
+  width:30px;
+  background-color:rgba(0, 0, 0, 0.5);
+  height:22px;
+  padding-right:6px;
+}
+
 .modal-backdrop.in {
   opacity:0;
 }
