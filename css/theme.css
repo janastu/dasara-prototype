@@ -107,6 +107,7 @@ body {
     height: auto;
     width: 100%;
     border: 3px solid #ccc;
+    cursor: pointer;
 }
 #lightbox .modal-content {
     display: inline-block;
@@ -127,7 +128,7 @@ body {
     z-index:1032;
 }
 
-div.row div {
+.snipit {
     height: 120px;
     margin-bottom:-100px;
     opacity: 0;
@@ -137,6 +138,28 @@ div.row div {
     top: -124px;
     transition-duration: 0.4s;
 
+}
+
+.info-icon {
+    /* height: 120px; */
+    margin-bottom:-100px;
+    opacity: 1;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* border:1px solid #ccc; */
+    position:relative;
+    top: -50px;
+    transition-duration: 0.4s;
+}
+
+.info-icon span {
+    height: 25px;
+    width: 40px;
+    padding: 3px 0 0 9px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.row:hover .info-icon {
+    opacity: 0;
 }
 
 div.row:hover .snipit {
