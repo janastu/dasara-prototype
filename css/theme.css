@@ -202,3 +202,7 @@ q:after  { content: close-quote }
   font-size:16px;
   margin-top:-15px;
 }
+
+.modal-dialog {
+  margin: 0px auto;
+}
