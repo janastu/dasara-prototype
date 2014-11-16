@@ -85,6 +85,15 @@
             'maxHeight': $(window).height() - 100
           };
       var swt = this.collection.find({'id': parseInt($(e.currentTarget).attr("target-id"))});
+      if(!swt.get('annotate')) {
+        swt.set({'annotate':'http://restory.swtr.us/#/play?url=' +
+                 encodeURIComponent(swt.get('where'))});
+      }
+      if(!swt.get('explore')) {
+        swt.set({'explore':'http://restory.swtr.us/#/linked-data?user=' +
+                 swt.get('who')});
+      }
+
       $("#modal-content").html("");
       $("#modal-content").append(this.swtTemplate(swt.toJSON()));
       $lightbox.find('.close').addClass('hidden');

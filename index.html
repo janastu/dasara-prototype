@@ -493,10 +493,10 @@ Website:<a href="http://chaha.in/"> Chaluvaraju's Hampi Website</p>
   </div>
 </script>
 <script type="text/template" id="swt-template">
-  <p><span><%= who %> has contributed a <%= what %> for <a href=<%= where %>><%= where %></a>.</span></p>
+  <p><span><%= who %> has annotated <a href=<%= where %>>this</a> image.</span></p>
   <p>Tags: <b> <%= how.tags %> </b> </p>
-  <a href="http://restory.swtr.us/#/play">Annotate!</a>
-  <a class="pull-right" href="http://restory.swtr.us/#/linked-data">Explore</a>
+  <a href=<%= annotate %> >Annotate!</a>
+  <a class="pull-right" href=<%= explore %>>Explore</a>
 </script>
 <div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog">
