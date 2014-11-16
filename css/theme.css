@@ -129,11 +129,11 @@ body {
 
 #lightbox .close {
     opacity: 1;
-    color: rgb(42, 42, 42);
+    color: #ccc;
     background-color: rgb(42, 42, 42);
     padding: 5px 8px;
     border-radius: 5px;
-    border: 1px solid rgb(42, 42, 42);
+    border: 1px solid #ccc;
     position: absolute;
     top: 0px;
     left: 0px;
