@@ -119,4 +119,11 @@
     $lightbox.find('.modal-dialog').css({'width': $img.width()});
     $lightbox.find('.close').removeClass('hidden');
   });
+
+  $(".chapter").waypoint(function() {
+    // Set the active class for respective li element
+    $("li").removeClass("active");
+    $('body').find('li[for="' + $(this).attr('id') + '"]' ).addClass('active');
+  });
+
 })();
