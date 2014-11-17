@@ -92,7 +92,7 @@ body {
 #chapter4{
     background-image: url('../img/devaragudda.JPG');
     background-size:cover;
-    background-position:215px -170px !important;
+    background-position:215px 0px !important;
     background-attachment:fixed;
 }
 
@@ -187,9 +187,6 @@ div.row:hover .snipit {
   padding-right:6px;
 }
 
-.modal-backdrop.in {
-  opacity:0;
-}
 #modal-content, #modal-content a{
     color: #000;
     text-shadow: none;
