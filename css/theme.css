@@ -105,14 +105,14 @@ body {
     padding-top:15px;
 }
 .modal-content {
-  background-color: #424242;
+    background-color: #424242;
 }
 
 .aboutRestory {
-  border-left:1px solid #ccc;
-  font-size:12px;
-  margin-top:10px;
-  height:28px;
+    border-left:1px solid #ccc;
+    font-size:12px;
+    margin-top:10px;
+    height:28px;
 }
 
 
@@ -202,20 +202,21 @@ div.row:hover .fullscreen-icon {
 body .modal-open {
     margin-right: 0px;
 }
+
 .tradition{
-  padding-right:30px;
+    padding-right:30px;
 }
 
-q { quotes: '"' '"' "'" "'" }
-q:before { content: open-quote }
-q:after  { content: close-quote }
+q { quotes: '"' '"' "'" "'"; }
+q:before { content: open-quote; }
+q:after  { content: close-quote; }
 
 
 .footer {
-  font-size:16px;
-  margin-top:-15px;
+    font-size:16px;
+    margin-top:-15px;
 }
 
 .modal-dialog {
-  margin: 0px auto;
+    margin: 0px auto;
 }
