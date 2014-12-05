@@ -86,11 +86,11 @@
           };
       var swt = this.collection.find({'id': parseInt($(e.currentTarget).attr("target-id"))});
       if(!swt.get('annotate')) {
-        swt.set({'annotate':'http://restory.swtr.us/#/play?url=' +
+        swt.set({'annotate':'http://digitalhampi.restory.swtr.us/#/play?url=' +
                  encodeURIComponent(swt.get('where'))});
       }
       if(!swt.get('explore')) {
-        swt.set({'explore':'http://restory.swtr.us/#/linked-data?user=' +
+        swt.set({'explore':'http://digitalhampi.restory.swtr.us/#/linked-data?user=' +
                  swt.get('who')});
       }
 
